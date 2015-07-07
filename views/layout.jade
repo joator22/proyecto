@@ -1,8 +1,26 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='icon' href='/favicon.ico' type='image/x-icon')
+    meta(charset='utf-8')  
+    link(type='text/css', rel='stylesheet', href='/stylesheets/style.css')    
+    title Preguntas
   body
-    block content
+    #page-wrap
+      header#h1.main
+        h2  Quiz: El juego de las preguntas 
+           
+      nav#n1.main(role='navigation')
+        span
+            a(href='/') Inicio         
+        span
+            a(href='/quizes/question') Preguntas
+        span
+            a(href='/quizes/author') Creditos
+
+
+      section#s1.main
+        block cuerpo        
+        section
+          footer#f1.main
+            span
+              a(href='https://github.com/joator22/proyecto') Repositorio en GITHUB

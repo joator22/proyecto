@@ -1,0 +1,10 @@
+extends ../layout.jade
+
+block cuerpo
+    div.formulario
+        form(name="entradaDatos", action="/quizes/answer", method="get")
+            p Pregunta #{pregunta}
+            input(type="text", name="respuesta" value="Responda aqui")     
+            input(type="submit", value="Enviar")
+    
+   
